@@ -23,7 +23,7 @@ class Company(models.Model):
     website = models.URLField(blank=True, null=True)
     address = models.CharField(max_length=255, blank=True, null=True)
     country = models.CharField(max_length=100, blank=True, null=True)
-    timezone = models.CharField(max_length=50, default="America/Bogota")
+    timezone_company = models.CharField(max_length=50, default="America/Bogota")
 
     # WhatsApp Cloud API configuration (per company)
     whatsapp_business_id = models.CharField(max_length=100, blank=True, null=True)
